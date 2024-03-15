@@ -1,0 +1,86 @@
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    height: 50vw;
+
+    .child {
+        padding: 25px;
+    }
+
+    /*
+    Static is the default, positioned in relation to elements
+    Top, bottom, left, right, and z-index have no effect
+    */
+    .static {
+        border: 2px solid red;
+        background-color: red;
+        position: static;
+    }
+
+    /*Relative is just like static but it can be changed using top, bottom, left, right, and z-index
+    Breaks out of the flow of the elements, do not use
+    */
+    .relative {
+        border: 2px solid orange;
+        background-color: orange;
+    }
+
+    /*Absolute removes element from standard flow, positions relative to parent container
+    If parent is static, it will move outside of container
+    If parent is relative, it will move inside of container
+    Position by top, bottom, left, right, z-index
+    */
+    .absolute {
+        border: 2px solid yellow;
+        background-color: yellow;
+    }
+
+    /*Fixed is like absolute but it is positioned to viewport
+    It doesn't move when scrolling
+    Position defined by top, bottom, left, right, z-index
+    */
+    .fixed {
+        border: 2px solid green;
+        background-color: green;
+    }
+
+    /*Sticky is a mix of relative and fixed, relative to flow
+    Position used for when you start scrolling
+    */
+    .sticky {
+        border: 2px solid blue;
+        background-color: blue;
+        position: sticky;
+        top: 75px;
+    }
+}
+
+.display-container {
+    margin-top: 2em;
+
+}
+
+.block-container {
+    border: 2px solid black;
+
+}
+
+.inline-element {
+    margin: 5px;
+    display: block;
+    /*Inline-block is just like inline but you can adjust width
+    */
+}
+
+.float-container {
+    margin-top: 5px;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.float-box {
+    border: 2px solid grey;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
